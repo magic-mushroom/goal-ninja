@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dip" >
+
+<!--     <View
+        android:id="@+id/archive_grey_bg"
+        android:layout_width="match_parent"
+        android:layout_height="124dip"
+        android:background="#969696" /> -->
+
+    <RelativeLayout
+        android:id="@+id/archive_rowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="124dip"
+		android:background="#AAE0E2">
+
+        <TextView
+            android:id="@+id/row_archive_title"
+            style="@style/feedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="100dip"
+            android:layout_marginTop="5dip" />
+
+<!--         <TextView
+            android:id="@+id/row_archive_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/row_archive_title"
+            android:layout_below="@id/row_archive_title"
+            android:layout_marginTop="10dip"
+            android:textSize="12sp" /> -->
+
+        <TextView
+            android:id="@+id/row_archive_start_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/row_archive_title"
+            android:layout_above="@+id/row_archive_date_text"
+            android:text="@string/started"
+            style="@style/homeDate"/>
+
+        <TextView
+            android:id="@+id/row_archive_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/row_archive_start_text"
+            android:layout_marginLeft="55dip"
+            android:layout_toRightOf="@id/row_archive_start_text"
+            style="@style/homeDate" />
+
+        <TextView
+            android:id="@id/row_archive_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/row_archive_title"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="2dip"
+            style="@style/homeDate"/>
+
+        <TextView
+            android:id="@+id/row_archive_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/row_archive_date_text"
+            android:layout_alignLeft="@id/row_archive_start"
+            style="@style/homeDate"/>
+        
+        <ImageView
+            android:id="@+id/row_archive_icon"
+            android:layout_width="75dip"
+            android:layout_height="85dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dip"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/archive_grey_mask"
+        android:layout_width="match_parent"
+        android:layout_height="124dip"
+        android:background="@drawable/listitem_selector" />
+    
+    <View
+        android:id="@+id/archive_shadow"
+        android:layout_below="@id/archive_rowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="6dip"
+        android:background="@drawable/shadow" />
+
+</RelativeLayout>

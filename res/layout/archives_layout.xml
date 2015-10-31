@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip">
+
+	<ListView 
+    	android:id="@+id/archived_goals"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:paddingTop="10dip"
+    	android:paddingBottom="8dip"
+    	android:divider="@null"
+    	android:dividerHeight="8dip"/>
+
+	<TextView
+	    android:id="@+id/no_archived_goals"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:paddingTop="20dip"
+	    android:textSize="20sp" 
+        android:textColor="#5D5353"/>
+
+
+</RelativeLayout>

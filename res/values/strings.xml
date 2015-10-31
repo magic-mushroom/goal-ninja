@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoalNinja</string>
+    <string name="app_tagline">Explore, record and track your goals</string>
+    <string name="splash">Splash Screen</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="add_new_goal">Add</string>
+    <string name="action_settings">Settings</string>
+    <string name="archives">Archives</string>
+    <string name="archivedGoal">Archived Goal</string>
+    <string name="tab1">DO</string>
+    <string name="tab2">EXPLORE</string>
+    <string name="tab3">FRIENDS</string>
+    <string name="rowActivity">Row Activity</string>
+    <string name="updateProgressActivity">Journal</string>
+    <string name="editGoalActivity">Edit Goal</string>
+    <string name="newGoalActivity">New Goal</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="no_archived_goals">Nothing to see here</string>
+    <string name="no_goals_added">No active goals! \n\nHit the <b>+</b> button on top-right to add a goal, or find some inspiration in the <b>Explore</b> tab.</string>
+    <string name="started">Started</string>
+    <string name="completed">Completed</string>
+    <string name="repeated">Repeat</string>
+    <string name="notes">MY NOTES</string>
+    <string name="in">&lt;i>in&lt;/i> %1$s</string>
+    
+    <string name="send_feedback">Send feedback</string>
+    <string name="feedback_text">Tell us what you think - what is good about the app, what needs to be better and what plain sucks! </string>
+    <string name="send">Send</string>
+    <string name="feedback_sent_msg">Thanks for the feedback!</string>
+    
+    <!--  Tab 3 -->
+    <string name="tab3Content">Coming Soon! Share your goal progress with friends. \n\n Give kudos, get inspired, get things done and kick some ass!</string>
+    
+    <!--  Adding New Goal -->
+    <string name="repeat">REPEAT</string>
+    <string name="complete">COMPLETE</string>
+    <string name="category"><i>Category:</i></string>
+    
+    <!--  Add Goal screen -->
+    <string name="add_goal">LET\'S DO IT!</string>
+    <string name="cancel">Cancel</string>
+    <string name="background">Background</string>
+    
+    <!--  Settings screen -->
+    <string name="settings">Settings</string>
+	<string name="show_notification">Show Notification Reminders</string>
+    <string name="time_for_notif">Time for reminder notifications</string>
+    <string name="morning_text">Morning</string>
+    <string name="afternoon_text">Afternoon</string>
+    <string name="evening_text">Evening</string>
+    <string name="night_text">Night</string>
+    
+    <!--  Update Progress screen -->
+    <string name="repeat_update">On %1$s streak</string>
+    <string name="complete_update">Due on %1$s</string>
+    <string name="write_something"><i>Write Something!</i></string>
+    <string name="done">Done</string>
+    <string name="back">Back</string>
+    <string name="note_hint">Add your progress</string>
+    <string name="save">Save</string>
+    <string name="delete_note">Delete Note?</string>
+    <string name="delete_note_text">This action cannot be undone</string>
+    
+    <!--  for the action bar -->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="complete_actionbar">Mark as complete</string>
+    <string name="archive_actionbar">Archive</string>   
+    
+    <!--  dialog messages -->
+    <string name="delete_goal_heading">Delete Goal</string>
+    <string name="delete_goal_msg">Are you sure you want to delete this goal?</string>
+    <string name="complete_goal_heading">Complete Goal</string>
+    <string name="complete_goal_msg">Are you sure you want to mark this goal complete?</string>
+    <string name="archive_goal_heading">Archive Goal</string>
+    <string name="archive_goal_msg">Are you sure you want to archive this goal?</string>
+    <string name="checkin_heading">Check in</string>
+    <string name="checkin_msg">Are you sure you have achieved your target for %1$s?</string>
+    <string name="checkin_toast_msg">You have already achieved your target for %1$s!</string>
+    
+    <!--  Edit Goal -->
+    <string name="edit_title"><i>Give a goal title!</i></string>
+    <string name="edit_done">SAVE</string>
+    
+    
+    <!--  Goal and Habit end messages -->
+	<string name="msg_goal_end">Time\'s up! Write a note and mark it complete.\nOr just set a new end-date, no pressure!</string>
+	<string name="daily_update">End of the day! Journal what you achieved today!</string>
+	<string name="weekday_update">The week is up! Write what you achieved and hit \"Done\" or \"Skip\" this week</string>
+	<string name="weekend_update">Weekend\'s gone! Record what you accomplished and hit \"Done\" or \"Skip\" this week</string>
+	<string name="weekly_update">End of the week! Journal your weekly achievements and hit \"Done\" or \"Skip\" this week</string>
+	<string name="fortnight_update">End of fortnight! Journal what you achieved and hit \"Done\" or \"Skip\" this fortnight</string>
+	<string name="month_update">End of the month! Record your monthly progress and hit \"Done\" or \"Skip\" this month</string>    
+	
+	<!--  Success Dialog messages -->
+	<string name="success_dialog_title">HOORAY!</string>
+	<string name="success_dialog_btn">WELL DONE, ME!</string>
+	<string name="goal_success">Time to party! And strike off another goal from your bucketlist! \n\nNow go out and celebrate. You have earned it.</string>
+	<string name="daily_success">Another seven days of success! \n\nGive yourself a pat on the back and let\'s do another 7.</string>
+	<string name="weekly_success">Two more weeks - you are on a roll! \n\nLet\'s do this for another 2.</string>
+	<string name="fortnightly_success">Way to go - you have completed your goal for the fortnight! \n\nKeep up the momentum for another fortnight.</string>
+	<string name="monthly_success">Sweet taste of success - You have done it for the month! \n\nLet\'s keep this going another month.</string>
+	
+	
+	<string name="note_goal_end">Goal completed</string>
+	<string name="dialog_note_hint">Write a note</string>
+	<string name="mark_as_complete">Mark As Complete</string>
+	<string name="delay">Postpone</string>
+	<string name="skip">Skip</string>
+	<string name="dialog_done">Done</string>
+	<string name="dialog_back">Back</string>
+    
+    <!--  Categories color coding -->
+    <string name="sports_row_color">#40FF00</string>
+    <string name="music_row_color">#FF0000</string>
+    <string name="fitness_row_color">#DF01D7</string>
+    <string name="coding_row_color">#808080</string>
+    <string name="reading_row_color">#240B3B</string>
+    <string name="arts_row_color">#F78181</string>
+    <string name="cooking_row_color">#FFBF00</string>
+    <string name="default_color">#000000</string>
+    
+    <!--  Start goal dropdown choices -->
+    <string-array name="start_goal_dropdown">
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>Next Week</item>
+    </string-array>
+    
+    <!--  Complete_Date dropdown choices -->
+    <string-array name="complete_date_dropdown">
+        <item>1 week</item>
+        <item>1 month</item>
+        <item>1 year</item>
+        <item>Pick a date&#8230;</item>
+    </string-array>
+    
+    <!--  Freq days dropdown choices -->
+    <string-array name="freq_day_dropdown">
+        <item>Daily</item>
+        <item>Weekdays</item>
+        <item>Weekends</item>
+        <item>Once a week</item>
+        <item>Fortnightly</item>
+        <item>Monthly</item>
+    </string-array>
+    
+    <!--  Freq time dropdown choices -->
+    <string-array name="freq_time_dropdown">
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+    </string-array>
+    
+    
+    <!--  Category dropdown choices -->
+    <string-array name="categories">
+        <item>Music</item>
+        <item>Food</item>
+        <item>Literature</item>
+        <item>Travel/Adventure</item>
+        <item>Tech</item>
+        <item>Fitness</item>
+        <item>Career</item>
+        <item>Personal</item>
+        <item>Lifestyle</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

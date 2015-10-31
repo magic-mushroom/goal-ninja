@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_goal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8871E" >
+
+    <TextView
+        android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_category_block"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="70dip"
+        android:layout_marginTop="40dip"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@id/edit_category_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_bottom_block"
+        android:alpha="0.6"
+        android:background="#A8A8A8"
+        android:orientation="horizontal"
+        android:paddingBottom="12dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:id="@+id/edit_category_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/edit_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/edit_bottom_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F4F4F4"
+        android:orientation="vertical"
+        android:paddingBottom="12dip"
+        android:paddingTop="20dip" >
+
+        <LinearLayout
+            android:id="@+id/edit_repeat_block"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            android:orientation="horizontal"
+            android:paddingBottom="0dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="0dip" >
+
+            <RelativeLayout
+                android:id="@+id/edit_repeat_date_block"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dip"
+                android:layout_weight="1"
+                android:background="#FAFAFA" >
+
+                <ImageView
+                    android:id="@+id/edit_bg_date_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/datetime_box" />
+
+                <ImageView
+                    android:id="@+id/edit_image1"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/date" />
+
+                <TextView
+                    android:id="@+id/edit_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_image1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#737373"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/edit_freq_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dialog" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_repeat_time_block"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FAFAFA" >
+
+                <ImageView
+                    android:id="@+id/edit_bg_time_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/datetime_box" />
+
+                <ImageView
+                    android:id="@+id/edit_image2"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/edit_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_image2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#737373"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/edit_freq_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dialog" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_complete_block"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            android:paddingBottom="0dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="0dip" >
+
+            <ImageView
+                android:id="@+id/edit_bg_complete_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dateonly_box" />
+
+            <ImageView
+                android:id="@+id/edit_image3"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/date" />
+
+            <TextView
+                android:id="@+id/edit_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_image3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:textColor="#737373"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        
+        <Button
+            android:id="@+id/edit_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="#33B679"
+            android:padding="5dip"
+            android:text="@string/edit_done"
+            android:textColor="#FFFFFF" />
+        
+        <View
+            android:id="@+id/edit_btn_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/shadow_btn" />
+        
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/edit_block_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dip"
+        android:layout_below="@id/edit_category_block"
+        android:background="@drawable/shadow_btn" />
+
+</RelativeLayout>    
+
+<!--     <TextView
+        android:id="@+id/edit_complete_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edit_title"
+        android:layout_alignTop="@+id/edit_complete"
+        android:layout_below="@id/edit_title"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@id/edit_complete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_title"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@id/edit_complete_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edit_freq_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edit_title"
+        android:layout_alignTop="@+id/edit_freq_day"
+        android:layout_below="@id/edit_title"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@id/edit_freq_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_title"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@id/edit_freq_text"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/edit_freq_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/edit_freq_day"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="20dip"
+        android:layout_toRightOf="@id/edit_freq_day"
+        android:textSize="20sp" />
+
+</RelativeLayout> -->

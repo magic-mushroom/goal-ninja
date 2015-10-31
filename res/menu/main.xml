@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newapp.MainActivity" >
+
+    <item
+        android:id="@+id/add_new_goal"
+        android:showAsAction="always"
+        android:title="@string/add_new_goal"
+        android:icon="@drawable/add"/>
+
+</menu>

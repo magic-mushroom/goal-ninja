@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="#F4F4F4">
+
+    <!-- Switch for setting notifications on/off -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/show_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/show_notification"
+            android:textSize="19sp"
+			android:textColor="#111111"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_for_notif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:gravity="center_horizontal"
+        android:paddingBottom="7dip"
+        android:paddingTop="7dip"
+        android:text="@string/time_for_notif"
+        android:background="#737373"
+        android:textColor="#DDE9ED"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Options for setting time -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E5E5E5"
+        android:paddingTop="8dip"
+        android:paddingBottom="12dip">
+
+        <CheckBox
+            android:id="@+id/morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="6dip"
+            android:text="@string/morning_text"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/morning_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/morning"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+   	<View 
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ACACAC"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E5E5E5"
+        android:paddingTop="8dip"
+        android:paddingBottom="12dip" >
+
+        <CheckBox
+            android:id="@+id/afternoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="6dip"
+            android:text="@string/afternoon_text"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/afternoon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/afternoon"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ACACAC"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E5E5E5"
+        android:paddingTop="8dip"
+        android:paddingBottom="12dip" >
+
+        <CheckBox
+            android:id="@+id/evening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="6dip"
+            android:text="@string/evening_text"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/evening_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/evening"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ACACAC"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E5E5E5"
+        android:paddingTop="8dip"
+        android:paddingBottom="12dip" >
+
+        <CheckBox
+            android:id="@+id/night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="6dip"
+            android:text="@string/night_text"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/night_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/night"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ACACAC"/>
+
+</LinearLayout>

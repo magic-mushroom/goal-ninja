@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_goal_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8871E" >
+
+    <EditText
+        android:id="@+id/new_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/new_category_block"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="70dip"
+        android:layout_marginTop="40dip"
+        android:hint="@string/edit_title"
+        android:padding="5dip"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDE9ED"
+        android:textSize="24sp"
+		android:maxLength="35"/>
+
+    <RelativeLayout
+        android:id="@id/new_category_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/new_bottom_block"
+        android:alpha="0.6"
+        android:background="#A8A8A8"
+        android:paddingBottom="12dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:id="@+id/new_category_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/category"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/new_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/new_category_text"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/new_category_text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/new_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dialog" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/new_bottom_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F4F4F4"
+        android:orientation="vertical"
+        android:paddingBottom="12dip">
+
+        <!--
+             <LinearLayout
+        android:id="@+id/radiogroup_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#737373"
+        android:paddingBottom="6dip"
+        android:orientation="horizontal">
+        -->
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#737373"
+            android:orientation="horizontal"
+            android:paddingBottom="6dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="10dip"
+            android:paddingTop="6dip"
+            android:textSize="20sp" >
+
+            <RadioButton
+                android:id="@+id/new_repeat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/repeat"
+                android:textColor="#DDE9ED"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/new_complete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/complete"
+                android:textColor="#DDE9ED"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/new_radiogrp_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dip"
+            android:background="@drawable/shadow_btn" />
+
+        <LinearLayout
+            android:id="@+id/new_repeat_block"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dip"
+            android:paddingBottom="0dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="0dip" >
+
+            <RelativeLayout
+                android:id="@+id/new_repeat_days_block"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dip"
+                android:layout_weight="1"
+                android:background="#FAFAFA" >
+
+                <ImageView
+                    android:id="@+id/new_bg_date_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/datetime_box" />
+
+                <ImageView
+                    android:id="@+id/new_image1"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/date" />
+
+                <TextView
+                    android:id="@+id/new_days_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_image1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#737373"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/new_freq_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dialog" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/new_repeat_time_block"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FAFAFA" >
+
+                <ImageView
+                    android:id="@+id/new_bg_time_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/datetime_box" />
+
+                <ImageView
+                    android:id="@+id/new_image2"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/new_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_image2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#737373"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/new_freq_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dialog" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/new_complete_block"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            android:layout_marginTop="20dip"
+            android:paddingBottom="0dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="0dip" >
+
+            <ImageView
+                android:id="@+id/new_bg_complete_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/dateonly_box" />
+
+            <ImageView
+                android:id="@+id/new_image3"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/date" />
+
+            <TextView
+                android:id="@+id/new_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/new_image3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:textColor="#737373"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/new_add_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="#EE543A"
+            android:padding="5dip"
+            android:text="@string/add_goal"
+			android:textColor="#FFFFFF"/>
+
+        <View
+            android:id="@+id/new_btn_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/shadow_btn" />
+    </LinearLayout>
+    
+    
+    <ImageView
+        android:id="@+id/new_icon"
+        android:layout_width="70dip"
+        android:layout_height="80dip"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/new_bottom_block"
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="30dip"/>
+
+</RelativeLayout>
+
+
+
+<!--     <ImageView
+        android:id="@+id/new_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/background"
+        android:scaleType="fitXY"
+        android:src="@drawable/sample_bg" />
+
+    <RelativeLayout
+        android:id="@+id/new_title_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_bg"
+        android:background="#8C6239"
+        android:paddingBottom="10dip" >
+
+        <EditText
+            android:id="@+id/new_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/edit_text_selector"
+            android:hint="@string/edit_title"
+            android:padding="5dip"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/new_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/new_title"
+            android:layout_below="@id/new_title"
+            android:text="Category"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/new_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/new_in"
+            android:layout_marginLeft="40dip"
+            android:layout_toRightOf="@id/new_in"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dialog" />
+    </RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/radiogroup_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_title_block"
+        android:layout_marginTop="8dip"
+        android:background="#746457"
+        android:paddingBottom="4dip"
+        android:orientation="horizontal">
+        
+    
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="4dip"
+        android:orientation="horizontal"
+        android:textSize="20sp" >
+
+        <RadioButton
+            android:id="@+id/new_repeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/repeat"
+            android:textSize="18sp" 
+            style="@style/darkText"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/new_complete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/complete"
+            android:textSize="18sp"
+            style="@style/darkText"
+            android:textStyle="bold"/>
+    </RadioGroup>
+    
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_freq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/radiogroup"
+        android:layout_below="@id/radiogroup"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/new_freq_days"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/new_freq_time"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/new_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/radiogroup"
+        android:layout_below="@id/radiogroup"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:textSize="20sp" /> 
+        
+   
+    
+    <RelativeLayout
+        android:id="@+id/new_complete_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup_block"
+        android:layout_marginTop="3dip"
+        android:background="#998675"
+        android:paddingBottom="10dip" >
+
+        <ImageView
+            android:id="@+id/new_image1"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@+id/new_date"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dip"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/date" />
+
+        <TextView
+            android:id="@id/new_date"
+            style="@style/darkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dip"
+            android:layout_toRightOf="@id/new_image1"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/new_repeat_day_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup_block"
+        android:layout_marginTop="3dip"
+        android:background="#998675"
+        android:paddingBottom="10dip" >
+
+        <ImageView
+            android:id="@+id/new_image2"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@+id/new_freq_days"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dip"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/date" />
+
+        <Spinner
+            android:id="@id/new_freq_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dip"
+            android:layout_toRightOf="@id/new_image2"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dialog" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/new_repeat_time_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_repeat_day_block"
+        android:layout_marginTop="3dip"
+        android:background="#998675"
+        android:paddingBottom="10dip" >
+
+        <ImageView
+            android:id="@+id/new_image3"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@+id/new_freq_time"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dip"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/time" />
+
+        <Spinner
+            android:id="@id/new_freq_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dip"
+            android:layout_toRightOf="@id/new_image3"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dialog" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/new_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/new_add_goal"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#04B404"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:text="@string/add_goal"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/new_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#A4A4A4"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:text="@string/cancel"
+            android:textSize="18sp" />
+    </LinearLayout> -->
